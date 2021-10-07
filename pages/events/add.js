@@ -1,10 +1,12 @@
+import Layout from "../../component/Layout";
+
 export default function AddEvetPage() {
     return (
-        <div>
+        <Layout title="Add new event">
             <h1>
                 add event
             </h1>
             
-        </div>
+        </Layout>
     )
 }

@@ -1,10 +1,12 @@
+import Layout from "../../component/Layout";
+
 export default function EventPage() {
     return (
-        <div>
+        <Layout>
             <h1>
                 coustom rout
             </h1>
             
-        </div>
+        </Layout>
     )
 }
