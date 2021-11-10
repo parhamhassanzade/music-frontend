@@ -1,0 +1,27 @@
+.event_item {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 8px 5px 20px 6px #0d0d0d;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  padding: 0px;
+  overflow: hidden;
+}
+.info_Section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vh;
+
+}
+.textBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  margin:0 10px 0 0;
+}

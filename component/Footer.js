@@ -12,7 +12,12 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
-      <p>copyright &copy; parham.hzd</p>
+      <p>
+        copyright &copy; &nbsp;
+        <Link href="https://www.linkedin.com/in/parham-hassanzade-176910168/">
+          parham.hzd
+        </Link>
+      </p>
     </footer>
   );
 }

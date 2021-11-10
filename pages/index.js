@@ -3,13 +3,13 @@ import Layout from "../component/Layout";
 import { API_URL } from "../config";
 import EventItem from "./../component/EventItem";
 export default function Home({ events }) {
-  console.log(events.events);
+  console.log(events);
   return (
     <Layout>
       <h1>UpComing Events</h1>
       {events.length === 0 ? <h3>No Events to show</h3> : ""}
 
-      {events.events.map((evt) => (
+      {events.map((evt) => (
         <EventItem key={evt.id} evt={evt} />
       ))}
     </Layout>
@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
   const events = await res.json();
 
   return {
-    props: { events },
+    props: { events:events.events.slice(0,3) },
     revalidate: 1,
   };
 };
